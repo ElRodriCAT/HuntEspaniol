@@ -6,11 +6,22 @@
 
 body {
   font-family: "Arial", sans-serif;
+}
+body header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+}
+body header h1 {
+  font-size: 1.7rem;
+}
+body main {
   background-image: url("/src/images/background1.png");
-  color: white;
   background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
+  background-position: center;
+  background-attachment: contain;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
@@ -32,8 +43,10 @@ body {
   display: flex;
   gap: 1.5rem;
   font-size: 1.1rem;
+  background-color: rgba(33, 37, 41, 0.8);
 }
 .navbar .menu a {
+  justify-items: center;
   color: white;
   text-decoration: none;
 }
@@ -54,6 +67,14 @@ body {
 
 .button:hover {
   background-color: rgb(25.5, 25.5, 25.5);
+}
+
+.cardText {
+  background-color: rgba(33, 37, 41, 0.8);
+  color: white;
+  max-width: 800px;
+  border: 2px solid #444;
+  border-radius: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */
