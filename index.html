@@ -8,29 +8,36 @@
   <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
-  <header>
+  <header class="p-3">
     <h1>Hunt: Showdown</h1>
-      <nav class="navbar">
-        <div class="logo">Hunt: Showdown</div>
-        <ul class="menu">
-          <a href="index.html">Inicio</a>
-          <a href="views/lore.html">Lore</a>
-          <a href="views/cazadores-mapas.html">Cazadores & Mapas</a>
-          <a href="views/guias.html">Guías</a>
-          <a href="views/contacto.html">Contacto</a>
-        </ul>
-      </nav>
+    <nav class="navbar position-fixed top-0 end-0">
+      <ul class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="views/lore.html">Lore</a>
+        <a href="views/cazadores-mapas.html">Cazadores & Mapas</a>
+        <a href="views/guias.html">Guías</a>
+        <a href="views/contacto.html">Contacto</a>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <h2>Bienvenido al mundo de Hunt: Showdown</h2>
-      <p>Guías, lore, cazadores, armas y más...</p>
-    </section>
+     
+      <div class="d-flex align-items-center min-vh-100">
+        <div class="card text-light bg-secondary shadow-lg p-4" style="max-width: 800px; border: 2px solid #444; border-radius: 1rem;">
+          <div class="card-body">
+            <h2 class="card-title text-center mb-3">Hunt: Showdown</h2>
+            <p class="card-text">
+              En las profundidades pantanosas de Luisiana, a fines del siglo XIX, una amenaza invisible comenzó a brotar desde las entrañas de la tierra. Criaturas imposibles, horrores innombrables y una corrupción que lo devora todo han convertido la región en un campo de caza sobrenatural. Todo comenzó con experimentos ocultos realizados por cultos, alquimistas y sociedades secretas. El resultado fue una ruptura entre nuestro mundo y otro mucho más oscuro. De esa grieta emergió una plaga que transforma a los humanos en monstruos, animales en bestias salvajes y la tierra misma en un ecosistema hostil y maldito. Para contener el avance de esta oscuridad, nació una organización en las sombras: la Asociación de Cazadores. Estos hombres y mujeres, conocidos como Hunters, están entrenados para rastrear, enfrentar y eliminar entidades sobrenaturales. Pero cada cacería tiene un costo, y la muerte no siempre es el final... Los cazadores se enfrentan no solo a criaturas deformes como el Butcher, el Spider, el Scrapbeak y el Assassin, sino también a otros cazadores rivales que buscan las mismas recompensas. En esta guerra silenciosa, la traición es tan común como la sangre. El universo de Hunt: Showdown está lleno de detalles sombríos: cultos oscuros que veneran a la corrupción, diarios y cartas perdidas que narran la caída de pueblos enteros, y reliquias imbuidas de poder maldito. El "Sculptor", una entidad desconocida, parece mover los hilos desde las sombras, esculpiendo a los cazadores a su antojo. Uno de los aspectos más misteriosos del lore es el concepto de renacimiento. Cuando un cazador muere, su alma puede ser devuelta... pero no intacta. Cada retorno deja marcas: físicas, mentales y espirituales. Algunos cazadores terminan por perder su humanidad, otros la vendieron hace mucho tiempo por poder.
+            </p>
+            </p>
+          </div>
+        </div>
+      </div>
   </main>
 
-  <footer>
-    <p>&copy; 2025 - Comunidad Hispana de Hunt: Showdown</p>
+  <footer class="bg-dark text-white text-center p-3 mt-5 fixed-bottom">
+    <p>&copy; 2025 - Hunt: Showdown en Español</p>
   </footer>
 
   <script src="js/main.js"></script>

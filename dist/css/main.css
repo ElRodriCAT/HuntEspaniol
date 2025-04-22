@@ -6,7 +6,7 @@
 
 body {
   font-family: "Arial", sans-serif;
-  background-image: url("/src/images/20250415_0927_Fondo Hunt_ Showdown_simple_compose_01jrwpj9h9fsh9zcbr6c284fkm.png");
+  background-image: url("/src/images/background1.png");
   color: white;
   background-size: cover;
   background-position: center center;
@@ -30,7 +30,8 @@ body {
 }
 .navbar .menu {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
+  font-size: 1.1rem;
 }
 .navbar .menu a {
   color: white;
