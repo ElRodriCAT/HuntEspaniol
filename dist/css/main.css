@@ -78,6 +78,11 @@ body .footer-redes .redes-sociales a {
   color: #a72828 !important;
 }
 
+p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8784313725);
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -96,7 +101,7 @@ body .footer-redes .redes-sociales a {
   display: flex;
   gap: 1.5rem;
   font-size: 1.1rem;
-  background-color: rgba(113, 120, 128, 0.7);
+  background-color: rgba(14, 13, 13, 0.788);
 }
 .navbar .menu li {
   list-style: none;
@@ -129,7 +134,7 @@ a:hover {
 
 .cardText {
   margin-left: 110px;
-  background-color: rgba(113, 120, 128, 0.7);
+  background-color: rgba(14, 13, 13, 0.788);
   color: white;
   max-width: 750px;
   border: 2px solid #444;
@@ -147,11 +152,11 @@ a:hover {
   }
 }
 .video-highlight {
-  background-color: rgba(10, 10, 10, 0.85);
+  background-color: rgba(14, 13, 13, 0.788);
   padding: 1rem 1rem;
   border: 2px solid #000000;
   border-radius: 0.43rem;
-  max-width: 800px;
+  max-width: 750px;
   margin-left: 110px;
 }
 .video-highlight .video-box {
@@ -159,13 +164,9 @@ a:hover {
   max-width: 750px;
 }
 .video-highlight .video-box h2 {
-  color: #cfda3f;
+  color: #a72828;
   font-size: 2rem;
   font-weight: bold;
-}
-.video-highlight .video-box p {
-  font-size: 1.1rem;
-  color: #cfda3f;
 }
 .video-highlight .video-box iframe {
   border: 2px solid #000000;
