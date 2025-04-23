@@ -5,41 +5,55 @@
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  height: 100%;
 }
 body header {
   position: fixed;
   width: 100%;
   z-index: 1000;
   top: 0;
+  height: auto;
+  overflow: visible;
 }
 body header h1 {
   font-size: 1.7rem;
 }
 body main {
+  position: relative;
+  z-index: 1;
   min-height: 100vh;
-  padding-top: 100px;
-  padding-bottom: 80px;
-  background-image: url("/src/images/");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-color: #212529;
-  min-height: 100vh;
+  padding-top: 130px;
+  padding-bottom: 60px;
 }
-
+body main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/src/images/background2_resized_1920x1080.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
 @media (max-width: 768px) {
-  footer.fixed-bottom {
+  body footer.fixed-bottom {
     position: static !important;
   }
-  main {
+  body main {
     background-image: linear-gradient(to bottom, #444, #000) !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-attachment: scroll !important;
   }
+  body main::before {
+    display: none !important;
+  }
 }
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -60,13 +74,18 @@ body main {
   font-size: 1.1rem;
   background-color: rgba(33, 37, 41, 0.8);
 }
-.navbar .menu a {
-  justify-items: center;
+.navbar .menu li {
+  list-style: none;
+}
+.navbar .menu li a {
+  display: block;
   color: white;
   text-decoration: none;
+  padding: 0.5rem;
 }
-.navbar .menu a:hover {
-  color: #e5ff00;
+
+a:hover {
+  color: #e5ff00 !important;
 }
 
 .button {
@@ -90,6 +109,17 @@ body main {
   max-width: 800px;
   border: 2px solid #444;
   border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #212529;
+    width: 100%;
+    z-index: 999;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
