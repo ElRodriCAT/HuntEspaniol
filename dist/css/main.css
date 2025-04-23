@@ -109,7 +109,7 @@ body .footer-redes .redes-sociales a {
 }
 
 a:hover {
-  color: #e5ff00 !important;
+  color: #a72828 !important;
 }
 
 .button {
@@ -145,6 +145,31 @@ a:hover {
     width: 100%;
     z-index: 999;
   }
+}
+.video-highlight {
+  background-color: rgba(10, 10, 10, 0.85);
+  padding: 1rem 1rem;
+  border: 2px solid #000000;
+  border-radius: 0.43rem;
+  max-width: 800px;
+  margin-left: 110px;
+}
+.video-highlight .video-box {
+  margin: 0px;
+  max-width: 750px;
+}
+.video-highlight .video-box h2 {
+  color: #cfda3f;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.video-highlight .video-box p {
+  font-size: 1.1rem;
+  color: #cfda3f;
+}
+.video-highlight .video-box iframe {
+  border: 2px solid #000000;
+  border-radius: 0.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */
