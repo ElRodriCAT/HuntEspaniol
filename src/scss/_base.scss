@@ -34,11 +34,32 @@ body {
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url('/src/images/background2_resized_1920x1080.png');
-      background-size: 100% 100%;
+      background-image: url('/src/images/20250415_0927_Fondo\ Hunt_\ Showdown_simple_compose_01jrwpj9h9fsh9zcbr6c284fkm.png');
+      background-size: 100% 94%;
       background-position: center;
       background-repeat: no-repeat;
       z-index: -1;
+      background-color: #212429;
+    } 
+   
+  }
+  .footer-redes {
+    background-color: #111;
+    padding: 1rem;
+    text-align: center;
+    p{
+      color: #bbb;
+      font-size: 0.9rem;
+      margin: 0.2rem;
+    }
+    .redes-sociales {
+      a {
+        color: #66926c;
+        margin: 0 10px;
+        font-size: 1.5rem;
+        transition: color 0.3s ease;
+  
+      }
     }
   }
   
@@ -61,4 +82,10 @@ body {
   }
 }
 
+.footer-redes .redes-sociales a {
+  color: #bbb !important;
 
+  &:hover {
+    color: #a72828 !important;
+  }
+}
