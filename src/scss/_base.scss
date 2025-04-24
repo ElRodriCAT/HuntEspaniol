@@ -5,28 +5,30 @@
 }
 
 body {
-  
-  height:100%;
-  
+  height: 100%;
+
+  // HEADER
   header {
     position: fixed;
-    width: 100%;
-    z-index: 1000;
     top: 0;
+    width: 100%;
     height: auto;
-    overflow: visible; 
+    overflow: visible;
+    z-index: 1000;
+
     h1 {
       font-size: 1.7rem;
     }
   }
-  
+
+  // MAIN
   main {
     position: relative;
     z-index: 1;
     min-height: 100vh;
-    padding-top: 130px; 
-    padding-bottom: 60px;
-    
+    padding-top: 130px; // para que no tape el header fijo
+    padding-bottom: 60px; // para que no tape el footer fijo
+
     &::before {
       content: "";
       position: absolute;
@@ -38,43 +40,61 @@ body {
       background-size: 100% 94%;
       background-position: center;
       background-repeat: no-repeat;
-      z-index: -1;
       background-color: #212429;
-    } 
-   
+      z-index: -1;
+    }
+
+    footer {
+      height: auto;
+      width: 100%;
+    }
   }
+
+  // FOOTER REDES
   .footer-redes {
     background-color: #111;
-    padding: 1rem;
+    padding: 0.3rem 0;
     text-align: center;
-    p{
+    line-height: 1; // muy importante para compactar
+    font-size: 0.8rem;
+  
+    p {
       color: #bbb;
-      font-size: 0.9rem;
-      margin: 0.2rem;
+      margin: 0;
+      padding: 0;
+      font-size: 0.75rem;
     }
+  
     .redes-sociales {
+      margin-bottom: 0.2rem;
+  
       a {
         color: #66926c;
-        margin: 0 10px;
-        font-size: 1.5rem;
+        margin: 0 6px;
+        font-size: 1.2rem;
         transition: color 0.3s ease;
   
+        &:hover {
+          color: $color-link-hover !important;
+        }
       }
     }
   }
   
+
+  // MEDIA QUERY - MÓVIL
   @media (max-width: 768px) {
     footer.fixed-bottom {
       position: static !important;
     }
-  
+
     main {
       background-image: linear-gradient(to bottom, #444, #000) !important;
       background-size: cover !important;
       background-position: center !important;
       background-repeat: no-repeat !important;
       background-attachment: scroll !important;
-  
+
       &::before {
         display: none !important;
       }
@@ -82,13 +102,16 @@ body {
   }
 }
 
+// ESTILOS GLOBALES FUERA DE BODY
 .footer-redes .redes-sociales a {
   color: #bbb !important;
-
+  font-size: 1.2rem;
+  margin: 0 6px;
   &:hover {
     color: $color-link-hover !important;
   }
 }
+
 p {
   font-size: 1.1rem;
   color: $color-text;
