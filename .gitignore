@@ -23,3 +23,7 @@ Thumbs.db
 # Otros archivos temporales
 *.bak
 *.swp
+
+#plantillas-HTML
+
+plantillasHTML/
