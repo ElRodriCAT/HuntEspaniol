@@ -12,17 +12,37 @@ body {
   font-size: 16px;
   line-height: 1.5;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 
   h1{
-    font-size: 1.5rem;
+    color:$color-text;
+    font-size: 1.65rem;
     text-align: center;
+    margin:7px;
+  }
+  .card{
+    max-width:50%;
+    height: auto;
+    background-color: $bg-color-card;
+    border:none;
+    h2{
+      color:$color-text-h2;
+      font-size: 1.2rem;
+      text-align: left;
+      
+    }
+    p{
+      color:$color-text;
+      min-width: auto;
+    }
   }
  
 }
 
 /*navbar*/
 nav {
-  background-color:$color-secondary; 
+  background:$gradient-color; 
   padding: 10px;
   ul {
     display: flex; 
@@ -35,7 +55,7 @@ nav {
       margin-left: 20px; 
       
       a {
-        color: $color-text;         
+        color: $color-link;         
         font-size: 16px;  
         transition: color 0.3s;
         text-decoration: none;
@@ -49,5 +69,33 @@ nav {
 }
 footer{
   text-align: center;
-  
+  background:$gradient-color;
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  row-gap: 12px;
+  justify-content: center;
+  margin-top: auto;
+  align-items: center;
+
+  .social-icons {
+
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+
+    .social-icon {
+      color: $color-link;
+      font-size: 18px;
+      transition: color 0.3s;
+      
+      &:hover {
+        color: $color-link-hover;
+      }
+    }
+  }
+
+  p{
+    font-weight: bold;
+  }
 }
