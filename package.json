@@ -3,8 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    
-  },
+  "build:main": "sass --watch --no-source-map src/scss/main.scss dist/css/main.css  ",
+  "build:index": "sass src/scss/index.scss dist/css/index.css --watch --no-source-map",
+  "build:contacto": "sass src/scss/contacto.scss dist/css/contacto.css --watch --no-source-map",
+  "build:lore": "sass src/scss/lore.scss dist/css/lore.css --watch --no-source-map",
+  "build:cazadores-mapas": "sass src/scss/cazadores-mapas.scss dist/css/cazadores-mapas.css --watch --no-source-map",
+  "build:guias": "sass src/scss/guias.scss dist/css/guias.css --watch --no-source-map"
+},
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ElRodriCAT/HuntPage.git"

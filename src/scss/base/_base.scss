@@ -1,0 +1,47 @@
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Configuración de la tipografía general */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #f1f1f1;
+  // background-color: #0a0a0a;
+  line-height: 1.5;
+}
+
+/* Enlaces */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Listas */
+ul, ol {
+  list-style: none;
+}
+
+/* Imágenes responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Titulares */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+/* Botones */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
