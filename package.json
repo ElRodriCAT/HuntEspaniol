@@ -5,10 +5,10 @@
   "scripts": {
     "build:main": "sass --watch --no-source-map src/scss/main.scss dist/css/main.css",
     "build:index": "concurrently \"sass --watch --no-source-map src/scss/main.scss dist/css/main.css\" \"sass --watch --no-source-map src/scss/pages/_index.scss dist/css/index.css\"",
-    "build:contacto": "concurrently \"sass --watch --no-source-map src/scss/main.scss dist/css/main.css\" \"sass --watch --no-source-map src/scss/contacto.scss dist/css/contacto.css\"",
-    "build:lore": "concurrently \"sass --watch --no-source-map src/scss/main.scss dist/css/main.css\" \"sass --watch --no-source-map src/scss/lore.scss dist/css/lore.css\"",
-    "build:cazadores-mapas": "concurrently \"sass --watch --no-source-map src/scss/main.scss dist/css/main.css\" \"sass --watch --no-source-map src/scss/cazadores-mapas.scss dist/css/cazadores-mapas.css\"",
-    "build:guias": "concurrently \"sass --watch --no-source-map src/scss/main.scss dist/css/main.css\" \"sass --watch --no-source-map src/scss/guias.scss dist/css/guias.css\""
+    "build:contacto": "concurrently \"sass --watch --no-source-map src/scss/main.scss dist/css/main.css\" \"sass --watch --no-source-map src/scss/pages/_contacto.scss dist/css/contacto.css\"",
+    "build:lore": "concurrently \"sass --watch --no-source-map src/scss/main.scss dist/css/main.css\" \"sass --watch --no-source-map src/scss/pages/_lore.scss dist/css/lore.css\"",
+    "build:cazadores-mapas": "concurrently \"sass --watch --no-source-map src/scss/main.scss dist/css/main.css\" \"sass --watch --no-source-map src/scss/pages/_cazadores-mapas.scss dist/css/cazadores-mapas.css\"",
+    "build:guias": "concurrently \"sass --watch --no-source-map src/scss/main.scss dist/css/main.css\" \"sass --watch --no-source-map src/scss/pages/_guias.scss dist/css/guias.css\""
   },
   "repository": {
     "type": "git",
